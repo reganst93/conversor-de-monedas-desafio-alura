@@ -12,7 +12,7 @@ import java.net.http.HttpResponse;
 public class ConexionApi {
 
     //Aca debe colocar la apiKey proporcionada por exchangerate
-    private final String apiKey = "fdcfec93797efe6df60cf6fc";
+    private final String apiKey = "API_KEY";
     private final HttpClient client = HttpClient.newHttpClient();
 
     public ConversionResponse convertirMoneda(String base, String destino, double cantidad) {
