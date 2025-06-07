@@ -38,12 +38,12 @@ public class Menu {
     private  String seleccionarMoneda(String tipo){
         System.out.println("Seleccione la " + tipo + "de la siguiente lista:");
         System.out.println("1. USD (Dólar estadounidense)");
-        System.out.println("2. EUR (Euro)");
-        System.out.println("3. JPY (Yen japonés)");
+        System.out.println("2. BOB (Boliviano boliviano)");
+        System.out.println("3. ARS (Peso argentino");
         System.out.println("4. CLP (Peso chileno)");
         System.out.println("5. CAD (Dólar canadiense)");
         System.out.println("6. BRl (Real Brasilero)");
-        System.out.println("7. GBP (Libra esterlina)");
+        System.out.println("7. COP (Peso colombiano)");
         System.out.print("Opción: ");
 
         int opcion = scanner.nextInt();
@@ -51,12 +51,12 @@ public class Menu {
 
         return switch (opcion){
             case 1 -> "USD";
-            case 2 -> "EUR";
-            case 3 -> "JPY";
+            case 2 -> "BOB";
+            case 3 -> "ARS";
             case 4 -> "CLP";
             case 5 -> "CAD";
             case 6 -> "BRL";
-            case 7 -> "GBP";
+            case 7 -> "COP";
             default -> {
                 System.out.println("Opción inválida. Intente nuevamente.");
                 yield seleccionarMoneda(tipo);
